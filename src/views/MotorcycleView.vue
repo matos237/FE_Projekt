@@ -1,5 +1,5 @@
 <template>
-    <div class="motorcycle-window" v-for="motorcycle in this.store.motorcycles">
+    <div class="motorcycle-window" v-for="motorcycle in this.store.motorcycles" :key="motorcycle.id">
       <div class="motorcycle-view" v-if="motorcycle.id == this.$route.params.id">
         <h2 class="name">{{ motorcycle.brand }} {{ motorcycle.model }}</h2>
         <div class="info">
@@ -10,7 +10,11 @@
           <p>Price: {{ motorcycle.price }} €</p>
           <p>Description: {{ motorcycle.description }}</p>
         </div>
-        <img class="bikeImage" :src="motorcycle.image" alt="Nastala chyba.">
+        <div class="imageWindow">
+          <img class="bikeImage" 
+          :src="motorcycle.image" 
+          alt="Nastala chyba.">
+        </div>
         </div>
       </div>
     </div>
@@ -32,9 +36,10 @@ import { useStore } from '../stores/store';
   <style scoped> 
 
     .bikeImage{
-      margin-left: 20%;
-      width: 550px;
-      height: 550px;
+      margin-top: 10%;
+      margin-left: 50%;
+      width: 500px;
+      height: 500px;
     }
     .info{
       display: flex;

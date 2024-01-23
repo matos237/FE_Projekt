@@ -16,7 +16,7 @@
     </nav>
   </template>
   
-  <style>
+  <style scoped>
   .navbar-text{
     margin-left: 10%;
   }

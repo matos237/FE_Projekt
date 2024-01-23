@@ -1,12 +1,12 @@
 <template>
-  <header>
-    <HeaderNav />
-  </header>
-  <main>
-    <RouterView />
-    
-  </main>
-  <PageFooter />
+    <header>
+      <HeaderNav />
+    </header>
+    <main>
+      <RouterView />
+      
+    </main>
+    <PageFooter />  
 </template>
 
 <script>
@@ -19,12 +19,14 @@ export default{
 };
 </script>
 
-<style scoped>
+<style>
 .navbar {
   margin-top: 0px;
 }
 
 #app{
+  position: relative;
+  min-height: 100vh;
   margin-left: 0px;
 }
 

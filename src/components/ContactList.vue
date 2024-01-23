@@ -2,7 +2,8 @@
     <div class="admin-page" v-if="store.showOption == 'current'">
         <h2>Current contact requests</h2>
         <button @click="store.changeDisplay()">Change requests</button>
-        <div v-for="contact in this.store.contacts">
+        <div v-for="contact in this.store.contacts"
+            :key="contact.id">
             <div class="contacts-info" v-if="contact.status == true">
                 <p>Name: {{ contact.name }}</p>
                 <p>Email: {{ contact.email }}</p>
@@ -14,7 +15,8 @@
     <div class="admin-page" v-else>
         <h2>Solved contact requests</h2>
         <button @click="store.changeDisplay()">Change requests</button>
-        <div v-for="contact in this.store.contacts">
+        <div v-for="contact in this.store.contacts"
+            :key="contact.id">
             <div class="contacts-info" v-if="contact.status == false">
                 <p>Name: {{ contact.name }}</p>
                 <p>Email: {{ contact.email }}</p>
