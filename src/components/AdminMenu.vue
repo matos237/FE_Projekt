@@ -27,6 +27,10 @@
           <label for="price">Price:</label>
           <input type="number" id="price" v-model="motorcycle.price" required />
         </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" v-model="motorcycle.description" required></textarea>
+        </div>
         <button type="submit" @click="this.store.addMotorcycle(this.motorcycle)">Add Motorcycle</button>
       </form>
     </div>
@@ -47,6 +51,7 @@ import { useStore } from '../stores/store';
           engine: '',
           topSpeed: null,
           price: null,
+          description: '',
         },
       };
     },

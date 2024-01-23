@@ -7,6 +7,7 @@
           <p>Engine: {{ motorcycle.engine }}</p>
           <p>Top Speed: {{ motorcycle.topSpeed }} kph</p>
           <p>Price: {{ motorcycle.price }} €</p>
+          <p>Description: {{ motorcycle.description }}</p>
         </div>
       </div>
     </div>
@@ -29,6 +30,7 @@ import { useStore } from '../stores/store';
 
     .data{
       margin-top: 50px;
+      width: 60%;
     }
     .motorcycle-view {
       margin-top: 100px;

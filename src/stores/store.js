@@ -12,7 +12,7 @@ export const useStore = defineStore('main', {
         engine: "L-Twin 696cc",
         topSpeed: 230,
         price: 5000,
-        description:""
+        description:"The Ducati Monster 696 of 2009 epitomizes a harmonious synthesis of aesthetic allure and dynamic prowess. This iconic motorcycle emanates an aura of distinctiveness, marrying style and performance seamlessly. Its engine, a formidable powerplant, unleashes a thrilling symphony as riders navigate varied landscapes. The Monster 696's design, marked by exposed components and a streamlined frame, emanates an understated elegance that captivates onlookers. An embodiment of versatility, this bike effortlessly adapts to the demands of city streets and winding roads alike, making it a versatile companion for diverse riding scenarios. Imbued with technological sophistication, the Monster 696 integrates modern features, ensuring an immersive and responsive riding experience. The attention to detail and quality craftsmanship underscore its enduring appeal, positioning the Monster 696 as a timeless icon within the realm of motorcycles, beckoning riders to embark on journeys where style meets performance with remarkable finesse."
       },
       {
         id: 1,
@@ -46,21 +46,23 @@ export const useStore = defineStore('main', {
       },
       {
         id: 4,
-        brand: "Ducati",
-        model: "Monster 696",
-        year: 2009,
-        engine: "L-Twin 696cc",
-        topSpeed: 230,
-        price: 5000
+        brand: "Honda",
+        model: "CB500F",
+        year: 2018,
+        engine: "Inline-2 471cc",
+        topSpeed: 180,
+        price: 4000,
+        description:"In the motorcycling realm, the Honda CB500F of 2018 emerges as a compelling testament to design ingenuity and dynamic capability. This motorcycle, with its distinctive profile, signifies a union of aesthetic finesse and functional prowess. Powered by an engine that embodies spirited performance, the CB500F commands the road with a captivating blend of efficiency and agility. Its sleek frame and contemporary lines contribute to an overall aesthetic that is both modern and timeless, appealing to riders seeking a balance of style and substance. The CB500F seamlessly integrates rider-friendly features, ensuring a smooth and responsive journey. With a focus on versatility, this bike effortlessly navigates urban landscapes and open highways, offering riders a dynamic experience that transcends conventional boundaries. In the realm of two-wheeled excellence, the Honda CB500F 2018 stands as an embodiment of innovation, inviting enthusiasts to embrace the exhilaration of the open road."
       },
       {
         id: 5,
-        brand: "Ducati",
-        model: "Monster 696",
-        year: 2009,
-        engine: "L-Twin 696cc",
-        topSpeed: 230,
-        price: 5000
+        brand: "Aprilia",
+        model: "RSV4 1100 Factory",
+        year: 2022,
+        engine: "V4 1099cc",
+        topSpeed: 299,
+        price: 21999,
+        description:"The Aprilia RSV4 1100 Factory of 2022 is an epitome of performance engineering and visual sophistication. This motorcycle, a culmination of cutting-edge design and advanced technology, commands attention with its authoritative presence on the road. Driven by a high-performance engine, the RSV4 1100 Factory offers riders an exhilarating journey marked by robust power delivery and precise control. Its aerodynamic silhouette, characterized by sleek lines and angular contours, not only enhances its visual appeal but also optimizes airflow for superior performance. The chassis, an engineering marvel, harmonizes strength and agility, delivering a ride that balances stability and responsiveness. Equipped with top-tier suspension and braking systems, this bike ensures riders experience uncompromised control and confidence in every maneuver. Meticulous attention to detail and superior craftsmanship further elevate the RSV4 1100 Factory's status, making it a coveted choice for riders seeking a seamless fusion of style and high-performance capability."
       },
     ],
     contacts: [
