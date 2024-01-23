@@ -1,34 +1,43 @@
 <template>
-    <main>
-      <MotorcycleInfo />
-    </main>
+    <div class="motorcycle-window" v-for="motorcycle in this.store.motorcycles">
+      <div class="motorcycle-view" v-if="motorcycle.id == this.$route.params.id">
+      <h2 class="name">{{ motorcycle.brand }} {{ motorcycle.model }}</h2>
+      <p>Year: {{ motorcycle.year }}</p>
+      <p>Engine: {{ motorcycle.engine }}</p>
+      <p>Top Speed: {{ motorcycle.topSpeed }} kph</p>
+      <p>Price: {{ motorcycle.price }} €</p>
+    </div>
+    </div>
   </template>
   
   <script>
-  import MotorcycleInfo from '../components/MotorcycleInfo.vue';
-  
-    export default{
-        components: {
-            MotorcycleInfo
-        }
-    }
+import { useStore } from '../stores/store';
+
+  export default {
+    data() {
+      return {
+        store : useStore(),
+        
+      };
+    },
+  };
   </script>
   
-  <style> 
-  main { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 10px; 
-    justify-content: center; 
-    } 
-    
-    .motorcycle-info { 
+  <style scoped> 
+
+    .name{
+      
+
+    }
+    .motorcycle-view {
+      margin-top: 100px;
+      height: 500px;
       background-color: #f8f8f8; 
       padding: 20px; 
       border: 1px solid #ddd; 
-      border-radius: 5px; 
-      flex: 1 0 calc(25% - 10px); 
-      /* Adjust the percentage as needed for more or fewer columns */ 
-      margin-bottom: 10px; 
-      } 
-      </style>
+      border-radius: 5px;  
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column; 
+    } 
+  </style>

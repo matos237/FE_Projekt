@@ -14,7 +14,7 @@ import MotorcycleInfo from '../components/MotorcycleInfo.vue';
   }
 </script>
 
-<style> 
+<style scoped> 
 main { 
   display: flex; 
   flex-wrap: wrap; 
