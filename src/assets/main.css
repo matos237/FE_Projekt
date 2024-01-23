@@ -1,0 +1,21 @@
+@import './base.css';
+
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.footer {
+    position: absolute;
+    padding: 40px;
+    font-size: medium;
+    background: rgb(241, 240, 240);
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .footer-col{
+    flex: 33%;
+    text-align: center;
+  }
