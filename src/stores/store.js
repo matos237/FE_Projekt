@@ -74,14 +74,14 @@ export const useStore = defineStore('main', {
     ],
     contacts: [
       {
-        id: 1,
+        id: 0,
         name: "Matej Svrček",
         email: "matovmail@gmail.com",
         message: "Stranka o motorkach a su tu udaje o 6 motorkach, si normalny?",
         status: true
       },
       {
-        id: 2,
+        id: 1,
         name: "Satej Mvrček",
         email: "satovmail@gmail.com",
         message: "?normalny si, motorkach 6 o udaje tu su a motorkach o Stranka",
@@ -91,15 +91,15 @@ export const useStore = defineStore('main', {
   }),
   actions: {
     addMotorcycle(motorcycle) {
-      this.motorcycles.push({id:this.motorcycles.length+1,...motorcycle});
+      this.motorcycles.push({id:this.motorcycles.length,...motorcycle});
       console.log(this.motorcycles);
     },
     addContact(contact) {
-      this.contacts.push({id:this.contacts.length+1,...contact});
+      this.contacts.push({id:this.contacts.length,...contact});
       console.log(this.contacts);
     },
     changeState(id){
-      this.contacts[id-1].status = false;
+      this.contacts[id].status = false;
       console.log(this.contacts.status);
       console.log(this.contacts);
     },
