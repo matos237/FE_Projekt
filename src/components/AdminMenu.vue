@@ -53,38 +53,4 @@ import { useStore } from '../stores/store';
   };
   </script>
   
-  <style>
-  /* Add your styles for the admin page here */
-  .admin-page {
-    padding: 20px;
-    margin: 10px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  </style>
   

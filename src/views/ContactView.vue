@@ -1,5 +1,16 @@
 <template>
+  <div class="row">
+    <div class="col-25">
+    </div>
+    <div class="col-50">
         <ContactForm />
+    </div>
+    <div class="col-25">
+    </div>
+  </div>
+  <div class="row">
+    
+  </div>
 </template>
   
 <script>
@@ -11,13 +22,3 @@
         }
     }
 </script>
-
-<style scoped>
-  @media (min-width: 1024px) {
-    .about {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-  }
-</style>

@@ -6,6 +6,37 @@
     flex-wrap: wrap;
   }
 
+  .col-50 {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .col-60 {
+    flex: 60%;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .col-75 {
+    flex: 75%;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .col-25{
+    flex: 25%;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .col-20{
+    flex: 20%;
+    max-width: 20%;
+    background-color: white;
+    padding: 0px;
+  }
+
 .footer {
     position: absolute;
     padding: 40px;
@@ -19,3 +50,60 @@
     flex: 33%;
     text-align: center;
   }
+
+  .admin-page {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .contact-form {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .motorcycle-info { 
+    background-color: #f8f8f8; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+  } 
+    
+  .motorcycle-info h2 { 
+      font-size: 24px; 
+      margin-top: 0; 
+      } 
+      
+  .motorcycle-info p { 
+    font-size: 16px; 
+  } 

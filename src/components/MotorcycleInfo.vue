@@ -20,25 +20,3 @@ import { useStore } from '../stores/store';
   };
   </script>
   
-  <style> 
-  .motorcycle-info { 
-    background-color: #f8f8f8; 
-    padding: 20px; 
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
-    margin: 10px; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 10px; 
-  } 
-    
-  .motorcycle-info h2 { 
-      font-size: 24px; 
-      margin-top: 0; 
-      } 
-      
-  .motorcycle-info p { 
-    font-size: 16px; 
-  } 
-    </style>
-  
