@@ -31,6 +31,7 @@
           name: '',
           email: '',
           message: '',
+          status: true
         },
       };
     },

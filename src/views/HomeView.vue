@@ -19,6 +19,6 @@ import MotorcycleInfo from '../components/MotorcycleInfo.vue';
     display: flex; 
     flex-wrap: wrap; 
     gap: 10px; 
-    justify-content: center; 
+    margin-left: 130px;
   } 
 </style>

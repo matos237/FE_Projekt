@@ -3,6 +3,9 @@
       <div class="navbar-brand">
         <router-link to="/">Home</router-link>
       </div>
+      <div class="navbar-text">
+        <h3>Motorcycle Informations</h3>
+      </div>
       <div class="navbar-menu">
         <div class="navbar-start">
           <router-link to="/about">About</router-link>
@@ -14,6 +17,9 @@
   </template>
   
   <style>
+  .navbar-text{
+    margin-left: 10%;
+  }
   .navbar {
     background-color: #3498db;
     padding: 1rem;
