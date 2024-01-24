@@ -1,4 +1,3 @@
-<!-- AdminPage.vue -->
 <template>
     <div class="admin-page">
       <h2>Admin Page - Add Motorcycle</h2>
